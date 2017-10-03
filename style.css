@@ -1,0 +1,62 @@
+<style media="screen">
+/**
+0 : propriétés générales
+1 : Entête
+2 : Menu
+3 : Articles
+4 : Navigation
+3 : Footer*/
+
+
+/** 0 : propriétés générales
+*/
+body{
+font-family: 'Crimson Text', serif;
+}
+
+img{
+  max-width: 100%; /** La taille maximale d'une image est 100% de la taille de l'écran */
+}
+
+.bleu{
+  color: blue;
+}
+
+.souligne{
+text-decoration: underline;
+}
+
+  /** 1 : Entête
+  */
+  h1{
+    font-family: 'Crimson Text', serif;
+    color: darkblue;
+    text-align: center;
+  }
+  #titreprincipal {
+  font-family: 'Crimson Text', serif;
+  color: darkblue;
+  font-size: 52px;
+  text-align: center;
+  }
+
+  /** 2 : Articles
+  */
+  h2{
+    font-family: 'Crimson Text', serif;
+    color: pink;
+    text-align: left;
+  }
+
+  p{
+    font-family: 'Crimson Text', serif;
+    text-align: center
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+
+/** 3 : Footer
+*/
+.footer{
+}
+
+  <img src="http://fakeimg.pl/200" alt="(fausse image du projet numéro 2)">
+</style>
