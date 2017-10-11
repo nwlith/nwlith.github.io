@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+<div class="container-fluid">
+
   <head>  <!-- Zones des métadonnées (invisibles)-->
     <meta charset="utf-8">  <!-- Encodage des caractères -->
     <title>Mon site</title>  <!-- titre -->
@@ -7,12 +9,14 @@
   <link rel="stylesheet" href="style.css">  <!-- Feuille de style appliquée -->
   </head>
 
-
   <body>
     <h1 class="souligne" id=titreprincipal>Mon site</h1>
-
-    <p>Voilà mon site !</p>
-    <img src="http://fakeimg.pl/500" alt="(fausse image)">
+    <div class="divbleu">
+        <p>Voilà mon site !</p>
+        <div class="divvert">
+        <img src="http://fakeimg.pl/250" alt="(fausse image)" class="dashed-red img-responsive">
+        </div>
+    </div>
 
     <nav>   <!-- Navigation -->
       <a href="projets/index_projets.html"><h2>Ici mes Projets</h2></a>  <!-- Lien vers mes projets -->
@@ -22,4 +26,6 @@
 
 <footer class="footer"> <p>Copyright 2017</p> </footer>
   </body>
+
+  </div>
 </html>

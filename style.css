@@ -1,4 +1,4 @@
-<style media="screen">
+
 /**
 0 : propriétés générales
 1 : Entête
@@ -10,16 +10,37 @@
 
 /** 0 : propriétés générales
 */
-body{
-font-family: 'Crimson Text', serif;
+html * /** tout est séléctionné */
+{
+  box-sizing: border-box; /** propriété pour choisir la manière dont on dimensionne les div */
 }
 
-img{
+body {
+  background: yellow;
+  background-image: url(Images/scared-cat-blue.jpg);
+  background-repeat: no-repeat;
+  margin: auto;
+  font-family: 'Crimson Text', serif;
+}
+
+img {
   max-width: 100%; /** La taille maximale d'une image est 100% de la taille de l'écran */
 }
 
-.bleu{
-  color: blue;
+.divbleu{
+  background: lightblue;
+  width: 400px;
+  height: 500px;
+  margin: 100px;
+  border: 5px solid yellow;
+
+
+}
+
+.divvert{
+  background: lightgreen;
+  width: 80%;
+  height: 80%;
 }
 
 .souligne{
@@ -42,21 +63,24 @@ text-decoration: underline;
 
   /** 2 : Articles
   */
+  .dashed-red{
+    border: 5px dashed red;
+  }
   h2{
     font-family: 'Crimson Text', serif;
     color: pink;
     text-align: left;
   }
 
-  p{
+  p {
     font-family: 'Crimson Text', serif;
-    text-align: center
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
-
+    text-align: center;
+  }
 /** 3 : Footer
 */
 .footer{
 }
 
+/*
   <img src="http://fakeimg.pl/200" alt="(fausse image du projet numéro 2)">
-</style>
+*/
