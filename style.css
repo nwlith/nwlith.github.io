@@ -24,7 +24,7 @@ body {
 }
 
 img {
-  max-width: 100%; /** La taille maximale d'une image est 100% de la taille de l'écran */
+  max-width: 60%; /** La taille maximale d'une image est 100% de la taille de l'écran */
 }
 
 .divbleu{
