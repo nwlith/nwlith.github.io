@@ -7,48 +7,68 @@
     <title>Manon Louvard Designer Graphique</title>  <!-- titre -->
   <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">  <!-- Lien vers google font -->
   <link rel="stylesheet" href="style.css">  <!-- Feuille de style appliquée -->
+  <script src="eSheep/esheep.min.js"></script>
   </head>
 
   <body>
+
     <div>
       <div class="intro" >
         <h1 class="souligne" id="titreprincipal">ml</h1>
         <div class="flexcontent">
-          <img class="main" width="100px" height="100px" src="Images/main-pixels.svg" alt="main">
+          <img class="main" width="30px" height="60px" src="Images/main-pixels.svg" alt="main">
+          <!-- <img class="gif" src="Images/Bruit-2x.gif" alt="gif"> -->
           <h2>manon.louvard@gmail.com<br>03 46 34 35 44<br>Instagram<br>Linkedin</h2>
         </div>
+        <button type="button" name="button">Ajouter un mouton</button>
+        <script type="text/javascript">
+          const button = document.querySelector('button');
+          const mouton = new eSheep();
+          button.addEventListener('click', () => {
+            mouton.Start();
+          });
+        </script>
       </div>
       <div class="projets">
         <div class="projet">
           <figure class="projet_miniature">
-            <img src="Images/scared-cat-blue.jpg" alt="chat peureux">
+            <img src="Images/serre-nc-M-0.jpg" alt="La serre de Nouvelle-Calédonie, Muséum d'histoire naturelle">
           </figure>
           <div class="projet_info">
-            <h3>Nom du projet<br>Technique<br>Date<br>Autre</h3>
+            <h3>La serre de Nouvelle Calédonie<br>Dépliant de présentation<br>février 2017</h3>
           </div>
         </div>
         <div class="projet">
           <figure class="projet_miniature">
-            <img src="Images/Scared-cat-nb.png" alt="chat peureux nb">
+            <img src="Images/ville-M.jpg" alt="La ville">
           </figure>
           <div class="projet_info">
-            <h3>Nom du projet<br>Technique<br>Date<br>Autre</h3>
+            <h3>La ville<br>Illustration<br>Novembre 2016</h3>
+          </div>
+        </div>
+
+        <div class="projet">
+          <figure class="projet_miniature">
+            <img src="Images/google-M-3.jpg" alt="Google nous veut du bien">
+          </figure>
+          <div class="projet_info">
+            <h3>Google nous veut du bien<br>Manifeste<br>Risographie<br>Mars 2017</h3>
           </div>
         </div>
         <div class="projet">
           <figure class="projet_miniature">
-            <img src="Images/scared-cat-blue.jpg" alt="chat peureux">
+            <img src="Images/typo3.jpg" alt="Carnet de typographie">
           </figure>
           <div class="projet_info">
-            <h3>Nom du projet<br>Technique<br>Date<br>Autre</h3>
+            <h3>Carnet<br>Calligraphie<br>Janvier 2017</h3>
           </div>
         </div>
         <div class="projet">
           <figure class="projet_miniature">
-            <img src="Images/Scared-cat-nb.png" alt="chat peureux nb">
+            <img src="Images/trames-M-1.jpg" alt="Jeux de trames">
           </figure>
           <div class="projet_info">
-            <h3>Nom du projet<br>Technique<br>Date<br>Autre</h3>
+            <h3>Jeux de trames<br>Edition, typographie<br>Décembre 2016</h3>
           </div>
         </div>
       </div>
