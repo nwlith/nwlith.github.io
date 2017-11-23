@@ -19,6 +19,14 @@ body {
   margin-left: 10%;
   margin-top: 5%;
   font-family: 'Acme';
+  cursor: url("Images/pointeur_test.cur"), pointer;
+}
+.photos_projet {
+  max-width: 100%;
+  justify-content: center;
+}
+a:link{
+  cursor:  pointer;
 }
 
 img {
@@ -83,6 +91,7 @@ text-decoration: underline;
   flex-direction:column;
   margin-left: 40%;
   }
+
   .projet {
     position: relative;
   }
