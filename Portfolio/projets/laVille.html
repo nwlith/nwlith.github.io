@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>La ville</title>
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <link rel="stylesheet" href="styleVille.css">
+    <link rel="icon" href="../Images/favicon.png">
+    <script>
+        var imageville = function(image) {
+          var taille = image.getBoundingClientRect();
+          var tailleFenetre = {
+            x: window.innerWidth / 2,
+            y: window.innerHeight / 2,
+          };
+          window.scrollTo(taille.width / 2 - tailleFenetre.x, taille.height / 2 - tailleFenetre.y);
+        }
+    </script>
+  </head>
+
+    <div class = "fixe"> 
+      <h1>La ville</h1>
+      <a href="../index.html" style="color: white">Retour</a>
+    </div>
+
+        <img class = "ville" onload="imageville(this)" src="../Images/laVilleFullScreen2_petit.jpg" alt="la ville, Manon Louvard">
+        <p>Illustration réalisée en 2016</p>
+
+    <div class="fleches">
+        <div class="haut">
+          <img class="fleche" src="../Images/fleche-haut-b.svg" alt="flèche haut" style="width:40px">
+        </div>
+        <div class="gauche-droite" style="flex-direction : row">
+            <img class="fleche" src="../Images/fleche-gauche-b.svg" alt="flèche gauche" style="width:45px">
+            <img class="fleche" src="../Images/fleche-droite-b.svg" alt="flèche droite" style="width:45px">
+        </div>
+        <div class="bas">
+            <img class="fleche" src="../Images/fleche-bas-b.svg" alt="flèche gauche" style="width:40px">
+        </div>
+      </div>
+
+
+<footer>
+<br><a href="../index.html">Page d'accueil ici !</a>
+</footer>
+  </body>
+</html>

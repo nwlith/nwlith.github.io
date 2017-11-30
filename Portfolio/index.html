@@ -4,10 +4,13 @@
 
   <head>  <!-- Zones des métadonnées (invisibles)-->
     <meta charset="utf-8">  <!-- Encodage des caractères -->
+    <meta name="viewport" content="width=device-widht,initial-scale=1">
     <title>Manon Louvard Designer Graphique</title>  <!-- titre -->
   <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">  <!-- Lien vers google font -->
   <link rel="stylesheet" href="style.css">  <!-- Feuille de style appliquée -->
+  <link rel="icon" href="Images/favicon.png">
   <script src="eSheep/esheep.min.js"></script>
+  <!-- lien vers mouton -->
   </head>
 
   <body>
@@ -19,14 +22,11 @@
           <!-- <img class="gif" src="Images/Bruit-2x.gif" alt="gif"> -->
           <h2>manon.louvard@gmail.com<br>Instagram<br>Linkedin</h2>
         </div>
+        <!-- Boutons tests
+        <button type="button" name="button">Gommette</button>
         <button type="button" name="button">Ajouter un mouton</button>
-        <script type="text/javascript">
-          const button = document.querySelector('button');
-          button.addEventListener('click', () => {
-            const mouton = new eSheep();
-            mouton.Start();
-          });
-        </script>
+         -->
+       
       </div>
       <div class="projets">
         <div class="projet">
@@ -39,13 +39,12 @@
         </div>
         <div class="projet">
           <figure class="projet_miniature">
-            <img src="Images/ville-M.jpg" alt="La ville">
+            <a href="projets/laVille.html"><img src="Images/ville-M.jpg" alt="La ville"></a>
           </figure>
           <div class="projet_info">
             <h3>La ville<br>Illustration<br>Novembre 2016</h3>
           </div>
         </div>
-
         <div class="projet">
           <figure class="projet_miniature">
             <img src="Images/google-M-3.jpg" alt="Google nous veut du bien">
@@ -73,7 +72,25 @@
       </div>
     </div>
 <footer class="footer"> </footer>
+
+<!--  script + Bouton gommette 
+  <script type="text/javascript">
+  const button = document.querySelector('button');
+  button.addEventListener('click', () => {
+    const gommette = new gommette();
+    gommette.Start();
+  }); 
+</script>-->
+
+<script type="text/javascript">
+  const button = document.querySelector('button');
+  button.addEventListener('click', () => {
+    const mouton = new eSheep();
+    mouton.Start();
+  });
+</script>
   </body>
+
 
   </div>
 </html>

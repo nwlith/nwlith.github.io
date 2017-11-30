@@ -1,0 +1,94 @@
+
+/**
+0 : général
+1 : éléments fixes
+2 : Ville
+*/
+
+
+
+/** 0 : général
+*/
+
+
+html * /** tout est séléctionné */
+{
+  box-sizing: border-box; /** propriété pour choisir la manière dont on dimensionne les div */
+}
+
+body {
+  font-family: 'Acme';
+}
+
+/** 1 : éléments fixes
+*/
+
+
+
+.fixe {
+  position: fixed;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  z-index: 1;
+  }
+
+h1 {
+    text-decoration: underline;
+    color:white;
+    font-size: 25px;
+}
+
+.fleches {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 50%;
+  bottom: 23px;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  z-index: 1;
+  transform: translateX(-50%);
+  width: 260px;
+}
+
+.gauche-droite{
+  justify-content: space-around;
+  width: 100%;
+  display: flex;
+}
+
+
+  /** 1 : Ville
+  */
+
+  .ville {
+    position: absolute; 
+    z-index: 0;
+    top: 0px; 
+    left: 0px;
+  }
+ 
+
+
+/*
+@media screen {
+  body {
+    background: blue;
+    transition: 15s;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    background: red;
+  }
+}
+*/
+
+/*
+  <img src="http://fakeimg.pl/200" alt="(fausse image du projet numéro 2)">
+*/

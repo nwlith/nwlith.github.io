@@ -21,6 +21,9 @@ body {
   font-family: 'Acme';
   cursor: url("Images/pointeur_test.cur"), pointer;
 }
+.bodyprojet  {
+  margin-left: 0px;
+}
 .photos_projet {
   max-width: 100%;
   justify-content: center;
