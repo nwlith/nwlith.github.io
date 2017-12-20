@@ -18,13 +18,13 @@ html * /** tout est séléctionné */
 
 body {
   font-family: 'Acme';
+  background: black;
 }
+
+   
 
 /** 1 : éléments fixes
 */
-
-
-
 .fixe {
   position: fixed;
   margin-left: 10%;
