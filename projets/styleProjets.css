@@ -6,7 +6,7 @@
 
 
 
-/** 0 : général et projet
+/** 0 : général et projet ******************************************************************************************
 */
 
 
@@ -19,7 +19,7 @@ body {
   font-family: "Roboto";
 }
 
-/** 1 : intro
+/** 1 : intro ******************************************************************************************************
 */
 
 .fixe {
@@ -32,33 +32,36 @@ body {
   }
 
 h1 {
-    font-family: "Acme";
-    text-decoration: underline;
-    color: red;
-    font-size: 25px;
+  font-family: "Acme";
+  text-decoration: underline;
+  color: red;
+  font-size: 18px;
 }
 
+/** 2 : texte et projet *********************************************************************************************
+*/
 
+.projets {
+  margin-auto
+  position : relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 0;
+}
 
-  /** 2 : texte et projet
-  */
+.projet {
+  display: flex;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  width: 800px;
+}
 
-  .projets {
-    position : relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 0;
-  }
-
-  .projet {
-    margin-bottom: 30px;
-    width: 900px;
-  }
- 
   .description {
     position:fixed;
-    font-family: "roboto";
+    font-family: 'Source Code Pro', monospace;
     font-size: 14px;
     width: 25%;
     margin-left: 70%;
