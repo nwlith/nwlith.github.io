@@ -4,7 +4,7 @@
 1 : intro**********************************************************************************************************
 2 : Menu***********************************************************************************************************
 3 : Articles*******************************************************************************************************
-4 : Navigation*****************************************************************************************************
+4 : Responsive*****************************************************************************************************
 3 : Footer*********************************************************************************************************
 */
 
@@ -21,7 +21,6 @@ body {
   margin-left: 10%;
   margin-top: 5%;
   font-family: 'Source Code Pro', monospace;
-  cursor: url("Images/pointeur_test.cur"), pointer;
 }
 
 .bodyprojet  {
@@ -34,7 +33,7 @@ body {
 }
 
 a:link{
-  cursor:  pointer;
+  cursor: url('Images/pointeurSmiley.cur'), pointer;
 }
 
 img {
@@ -54,6 +53,7 @@ img {
   color: red;
   text-align: left;
   position: fixed;
+  z-index: 1;
 }
 
 #titreprincipal {
@@ -86,7 +86,7 @@ img {
   margin-top:0;
 }
 
-.flexcontent{
+.description{
   display:flex;
   flex-direction:row;
 }
@@ -99,41 +99,121 @@ img {
   display:flex;
   justify-content:space-between;
   flex-direction:column;
-  margin-left: 35%;
-}
-
-.projet {
-  position: relative;
+  margin-left: 30%;
+  z-index: 0;
 }
 
 .projet .miniature {
-  bottom : 40px;
-}
-.projet .info .tests {
-  font-family: 'Roboto', serif;
-  font-size:11px;
-  right: 60px;
-  top: 20px;
-  color: #535353;
-  position: absolute; 
-  text-align: right;
-  z-index:2;
-}
-
-.projet .info .vrai{
-  font-family: 'Roboto', serif;
-  font-size:11px;
-  right: 60px;
-  color: #202020;
-  position: absolute;
-  text-align: right;
-  z-index:2;
+  position: relative;
+  max-width: 700px;
+  margin: 0px;
+  margin-bottom: 40px;
 }
 
 .projets p {
   font-family: 'Source Code Pro', monospace;
   font-size: 14px;
   text-align:left;
+}
+
+/** 3 : Responsive ***************************************************************************************************
+*/
+/** 1000px */
+@media screen and (max-width:1000px){
+
+  .projets {
+    margin-left: 140px;
+  }
+
+  .projet .miniature {
+    position: relative;
+    max-width: 700px;
+    bottom : 40px;
+    margin-bottom: 40px;
+  }
+
+}
+
+/** 900px */
+@media screen and (max-width:900px){
+
+  .projet .miniature {
+    position: relative;
+    max-width: 700px;
+    bottom : 40px;
+    margin-bottom: 40px;
+  }
+
+}
+/** 600px */
+@media screen and (max-width:600px){
+
+  .intro {
+    bottom: 20px;
+    left: 40px;
+  }
+
+  .description {
+    display: none;
+  }
+
+  #titreprincipal {
+    font-family: 'Acme', serif;
+    color: red;
+    font-size: 60px;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 12px;
+  }
+
+  .projets {
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .projet .miniature {
+    position: relative;
+    max-width: 700px;
+    bottom : 40px;
+    margin-bottom: 40px;
+  }
+}
+/** 550px */
+@media screen and (max-width:550px){
+  .projets {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .projet .miniature {
+    position: relative;
+    max-width: 700px;
+    bottom : 40px;
+    margin-bottom: 40px;
+  }
+}
+/** 380px */
+@media screen and (max-width:380px){
+  .intro {
+    bottom: 10px;
+    left: 20px;
+  }
+
+  img {
+    max-width: 300px;
+  }
+
+  .projets {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .projet .miniature {
+    position: relative;
+    max-width: 700px;
+    bottom : 40px;
+    margin-bottom: 40px;
+  }
 }
 
 /** 3 : Footer ****************************************************************************************************
