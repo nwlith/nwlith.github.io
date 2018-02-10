@@ -18,18 +18,13 @@ html * /** tout est séléctionné */
 }
 
 body {
-  margin-left: 10%;
-  margin-top: 5%;
   font-family: 'Source Code Pro', monospace;
 }
 
-.bodyprojet  {
-  margin-left: 0px;
-}
-
-.photos_projet {
-  max-width: 100%;
-  justify-content: center;
+canvas {
+  position: fixed;
+  margin: 0px;
+  z-index: 0;
 }
 
 a:link{
@@ -37,7 +32,8 @@ a:link{
 }
 
 img {
-  max-width: 80%; /** La taille maximale d'une image est 60% de la taille de l'écran */
+  max-width: 75%;
+  margin: 0px;
 }
 
 .souligne{
@@ -54,6 +50,8 @@ img {
   text-align: left;
   position: fixed;
   z-index: 1;
+  margin-left: 10%;
+  margin-top: 5%;
 }
 
 #titreprincipal {
@@ -63,6 +61,10 @@ img {
   text-align: left;
   margin: 0;
   margin-bottom: 12px;
+}
+
+#titreprincipalLien {
+  display:none;
 }
 
 .intro .main {
@@ -95,19 +97,24 @@ img {
 */
 
 .projets {
-  bottom:200px;
+  
   display:flex;
   justify-content:space-between;
   flex-direction:column;
-  margin-left: 30%;
+  margin-left: 35%;
+  margin-top: 4em;
   z-index: 0;
+}
+
+figure {
+  margin: 0px
 }
 
 .projet .miniature {
   position: relative;
   max-width: 700px;
   margin: 0px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .projets p {
@@ -121,32 +128,14 @@ img {
 /** 1000px */
 @media screen and (max-width:1000px){
 
-  .projets {
-    margin-left: 140px;
-  }
-
-  .projet .miniature {
-    position: relative;
-    max-width: 700px;
-    bottom : 40px;
-    margin-bottom: 40px;
-  }
 
 }
 
-/** 900px */
-@media screen and (max-width:900px){
+/** 900px */ @media screen and (max-width:900px){
 
-  .projet .miniature {
-    position: relative;
-    max-width: 700px;
-    bottom : 40px;
-    margin-bottom: 40px;
-  }
 
 }
-/** 600px */
-@media screen and (max-width:600px){
+/** 600px */ @media screen and (max-width:600px){
 
   .intro {
     bottom: 20px;
@@ -158,40 +147,55 @@ img {
   }
 
   #titreprincipal {
+    display: none;
+  }
+
+  #titreprincipalLien {
+    display: block;
     font-family: 'Acme', serif;
     color: red;
-    font-size: 60px;
+    font-size: 40px;
     text-align: left;
     margin: 0;
     margin-bottom: 12px;
+    text-decoration: none;
   }
 
-  .projets {
-    margin-top: 60px;
+  a #titreprincipalLien {
+    
+  }
+
+  img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  a {
+    display: flex;
     margin-left: auto;
     margin-right: auto;
   }
 
   .projet .miniature {
-    position: relative;
-    max-width: 700px;
-    bottom : 40px;
-    margin-bottom: 40px;
-  }
-}
-/** 550px */
-@media screen and (max-width:550px){
-  .projets {
+    display: flex;
     margin-left: auto;
     margin-right: auto;
   }
-  .projet .miniature {
-    position: relative;
-    max-width: 700px;
-    bottom : 40px;
-    margin-bottom: 40px;
+  .projets {
+    margin: 0px;
+    margin-top: 3em;
+  }
+
+}
+
+/** 550px */ @media screen and (max-width:550px){
+  
+  img {
+    width:90%;
   }
 }
+
 /** 380px */
 @media screen and (max-width:380px){
   .intro {
@@ -202,22 +206,7 @@ img {
   img {
     max-width: 300px;
   }
-
-  .projets {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .projet .miniature {
-    position: relative;
-    max-width: 700px;
-    bottom : 40px;
-    margin-bottom: 40px;
-  }
 }
-
-/** 3 : Footer ****************************************************************************************************
-*/
 
 /*
 @media screen {
@@ -232,8 +221,4 @@ img {
     background: red;
   }
 }
-*/
-
-/*
-  <img src="http://fakeimg.pl/200" alt="(fausse image du projet numéro 2)">
 */

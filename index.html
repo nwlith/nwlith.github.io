@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
 <div class="container-fluid">
-
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-widht,initial-scale=1">
-    <title>Manon Louvard Designer Graphique</title>
-    <link href="https://fonts.googleapis.com/css?family=Acme|Roboto|Source+Code+Pro|EB+Garamond" rel="stylesheet">  <!-- Lien vers google font Acme -->
-    <link rel="stylesheet" href="style.css">  <!-- Feuille de style appliquée -->
-
+    <title>Manon Louvard - Design graphique</title>
+    <link href="https://fonts.googleapis.com/css?family=Acme|Roboto|Source+Code+Pro|EB+Garamond" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/favicon.png">
   </head>
 
   <body>
-    <div>
+    <canvas id="draw" width="800" height="800"></canvas>
+    <div cass="contenu">
       <div class="intro" >
+        <a href="contact.html" id="titreprincipalLien"><h1 class="souligne">ml</h1></a>
         <h1 class="souligne" id="titreprincipal">ml</h1>
         <div class="description">
           <img class="main" width="30px" height="60px" src="Images/main-pixels.svg" alt="main">
@@ -23,7 +24,7 @@
       <div class="projets">
         <div class="projet">
           <figure class="miniature">
-            <a href="projets/serre-nouvelle-caledonie.html"><img src="Images/serre-nc-M-0.jpg" alt="La serre de Nouvelle-Calédonie, Muséum d'histoire naturelle"></a>
+            <a href="projets/serre-nouvelle-caledonie.html"><img src="Images/serre-nc-M-0.jpg" alt="La serre de Nouvelle-Calédonie, Muséum d'histoire naturelle, Manon Louvard"></a>
           </figure>
         </div>
         <div class="projet">
@@ -38,17 +39,23 @@
         </div>
         <div class="projet">
           <figure class="miniature">
-            <a href="projets/journal-le-monde.html"><img src="Images/le-monde-M-1.png" alt="Illustration pour le journal du Monde"></a>
+              <a href="projets/lesReves.html"><img src="Images/reve4-M2.png" alt="Les rêves, Manon Louvard"></a>
           </figure>
         </div>
         <div class="projet">
           <figure class="miniature">
-            <a href="projets/trames.html"><img src="Images/trames-M-1.jpg" alt="Jeux de trames"></a>
+            <a href="projets/physis.html"><img src="Images/physis-M-0.jpg" alt="Revue Physis, Manon Louvard"></a>
+          </figure>
+        </div>
+        <div class="projet">
+          <figure class="miniature">
+            <a href="projets/le-monde.html"><img src="Images/le-monde-M-6.jpg" alt="Illustration pour le journal du Monde, Manon Louvard"></a>
           </figure>
         </div>
       </div>
     </div>
-    <footer class="footer"> </footer>
+    <script src='script.js'>
+    </script>
   </body>
 </div>
 </html>
