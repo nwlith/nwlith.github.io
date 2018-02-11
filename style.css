@@ -93,11 +93,49 @@ img {
   flex-direction:row;
 }
 
+.contact{
+  margin-top: 10em;
+  margin-left: 10em;
+}
+
+.descriptionContact{
+  font-size: 14px;
+  font-family: 'Acme', serif;
+  color: red;
+}
+
+.descriptionContact a {
+  color: red;
+  text-decoration-style: none;
+  text-decoration-line: none;
+}
+
+.description a {
+  color: red;
+  text-decoration-style: none;
+  text-decoration-line: none;
+}
+
+.description a:link{
+  cursor: pointer;
+}
+
+.description a:hover{
+  text-decoration: underline;
+}
+
+.descriptionContact a:link{
+  cursor: pointer;
+}
+
+.descriptionContact a:hover{
+  text-decoration: underline;
+}
+
 /** 2 : Articles ***************************************************************************************************
 */
 
 .projets {
-  
   display:flex;
   justify-content:space-between;
   flex-direction:column;
