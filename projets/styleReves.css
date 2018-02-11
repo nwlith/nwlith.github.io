@@ -42,7 +42,6 @@ h1 {
 
 .projets {
   position : absolute;
-  z-index: 0;
   left : 50px;
   top: 150px;
   display: flex;
@@ -53,13 +52,6 @@ h1 {
 figure {
   margin: 0px;
   margin: 20px;
-}
-
-.projet {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 800px;
 }
 
 .reve {
@@ -123,30 +115,30 @@ a {
 /** 3 : Responsive ***************************************************************************************************
 */
 
-/** 900px */ 
-@media screen and (max-width:900px){
-  .projet {
-    width: 730px;
+@media screen and (max-width:920px){
+  .reve {
+    width: 150px;
   }
   
 }
-/** 750px */ 
-@media screen and (max-width:750px){
-  .projet {
-    width: 600px;
-  }
-}
-/** 620px */ 
+
 @media screen and (max-width:620px){
-  .projet {
-    width: 520px;
+  .reve {
+    width: 115px;
   }
 }
 
-/** 550px */
-@media screen and (max-width:550px){
-  .projet {
-    width: 430px;
+@media screen and (max-width:520px){
+  .reve {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width:330px){
+  .projets {
+    left: 0px;
+    top: 0px;
+    justify-content: center;
   }
 }
 
@@ -164,6 +156,11 @@ a {
     height: 40px;
     margin: 0px;
   }
+
+  .description {
+    display: none;
+  }
+
 }
 
 /** 350px */
