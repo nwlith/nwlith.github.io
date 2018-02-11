@@ -170,12 +170,6 @@ figure {
     margin-right: auto;
   }
 
-  a {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .projet .miniature {
     display: flex;
     margin-left: auto;

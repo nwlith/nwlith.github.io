@@ -4,8 +4,6 @@
 2 : texte et projet
 */
 
-
-
 /** 0 : général et projet ******************************************************************************************
 */
 
@@ -115,12 +113,11 @@ a {
   .projet {
     width: 430px;
   }
-}
 
-.description {
-  display: none;
+  .description {
+    display: none;
+  }
 }
-
 
 /** 450px */
 @media screen and (max-width:450px){
