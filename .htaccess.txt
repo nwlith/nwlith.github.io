@@ -1,0 +1,2 @@
+﻿404 http://www.nom-de-votre-site.com/404.html
+
