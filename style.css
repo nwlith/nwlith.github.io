@@ -116,17 +116,17 @@ img {
   text-decoration-line: none;
 }
 
-.description a:link{
+/**.description a:link{
   cursor: pointer;
-}
+}*/
 
 .description a:hover{
   text-decoration: underline;
 }
 
-.descriptionContact a:link{
+/**.descriptionContact a:link{
   cursor: pointer;
-}
+}*/
 
 .descriptionContact a:hover{
   text-decoration: underline;
