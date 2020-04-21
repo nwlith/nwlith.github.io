@@ -11,29 +11,38 @@
 
 /** 0 : propriétés générales**************************************************************************************
 */
-
 html * /** tout est séléctionné */
 {
   box-sizing: border-box; /** propriété pour choisir la manière dont on dimensionne les div */
 }
 
+html
+{
+  height: 100%;
+  cursor: url('Images/cursor.svg'), default;
+}
+
 body {
-  font-family: 'Source Code Pro', monospace;
+  background-color: #EEF0FC;
+  color: #00301F;
+  color: #01442C;
+  font-family: 'Rosarivo', serif;
+  font-size:20px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+ }
+
+a {
+  color: #01442C;
+  font-family: 'Rosarivo', serif;
+  font-style: italic;
+  text-decoration: none;
 }
 
-canvas {
-  position: fixed;
-  margin: 0px;
-  z-index: 0;
-}
-
-a:link{
-  cursor: url('Images/pointeurSmiley.cur'), pointer;
-}
-
-img {
-  max-width: 75%;
-  margin: 0px;
+h1 {
+  font-style: italic;
+  font-size: 30px;
 }
 
 .souligne{
@@ -41,131 +50,38 @@ img {
 }
 
 
-/** 1 : Intro *****************************************************************************************************
+/** 1 : rotation *****************************************************************************************************
 */
 
-.intro{
-  font-family: 'Acme';
-  color: red;
-  text-align: left;
-  position: fixed;
-  z-index: 1;
-  margin-left: 10%;
-  margin-top: 5%;
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+ 
+#rotate {
+  position: relative;
+  width: 200px;
+  -webkit-animation: rotating 20s linear infinite;
 }
 
-#titreprincipal {
-  font-family: 'Acme', serif;
-  color: red;
-  font-size: 40px;
-  text-align: left;
-  margin: 0;
-  margin-bottom: 12px;
-}
-
-#titreprincipalLien {
-  display:none;
-}
-
-.intro .main {
- height: 30px;
- margin-right: 7px;
- margin-top: 5px;
-}
-
-.intro .gif {
-  height: 50px;
-  width: 50px;
-  margin-right: 7px;
-  margin-top: 5px;
-}
-
-.intro  h2 {
-  font-family: 'Acme', serif;
-  color: red;
-  font-size: 14px;
-  text-align: left;
-  margin-top:0;
-}
-
-.description{
-  display:flex;
-  flex-direction:row;
-}
-
-.contact{
-  margin-top: 10em;
-  margin-left: 10em;
-}
-
-.descriptionContact{
-  font-size: 14px;
-  font-family: 'Acme', serif;
-  color: red;
-}
-
-.descriptionContact a {
-  color: red;
-  text-decoration-style: none;
-  text-decoration-line: none;
-}
-
-.description a {
-  color: red;
-  text-decoration-style: none;
-  text-decoration-line: none;
-}
-
-/**.description a:link{
-  cursor: pointer;
-}*/
-
-.description a:hover{
-  text-decoration: underline;
-}
-
-/**.descriptionContact a:link{
-  cursor: pointer;
-}*/
-
-.descriptionContact a:hover{
-  text-decoration: underline;
-}
+#rotate:hover{
+  animation-play-state: paused;
+  }
 
 /** 2 : Articles ***************************************************************************************************
 */
 
-.projets {
-  display:flex;
-  justify-content:space-between;
-  flex-direction:column;
-  margin-left: 35%;
-  margin-top: 4em;
-  z-index: 0;
-}
 
-figure {
-  margin: 0px
-}
-
-.projet .miniature {
-  position: relative;
-  max-width: 700px;
-  margin: 0px;
-  margin-bottom: 60px;
-}
-
-.projets p {
-  font-family: 'Source Code Pro', monospace;
-  font-size: 14px;
-  text-align:left;
-}
 
 /** 3 : Responsive ***************************************************************************************************
 */
+
 /** 1000px */
 @media screen and (max-width:1000px){
-
 
 }
 

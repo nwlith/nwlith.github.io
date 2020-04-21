@@ -1,69 +1,23 @@
 <!DOCTYPE html>
 <html>
-<div class="container-fluid">
+
   <head>
     <meta charset="utf-8">
     <meta name="Manon Louvard" content="Manon louvard, design graphique">
     <title>Manon Louvard - Design graphique</title>
-    <link href="https://fonts.googleapis.com/css?family=Acme|Roboto|Source+Code+Pro|EB+Garamond" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Images/favicon.png">
   </head>
 
   <body>
-    <canvas id="draw" width="800" height="800"></canvas>
-    <div cass="contenu">
-      <div class="intro" >
-        <a href="contact.html" id="titreprincipalLien"><h1 class="souligne">ml</h1></a>
-        <h1 class="souligne" id="titreprincipal">ml</h1>
-        <div class="description">
-          <a href="contact.html"><img class="main" width="30px" height="60px" src="Images/main-pixels.svg" alt="main"></a>
-          <h2>manon.louvard@gmail.com
-            <br><a href="https://www.instagram.com/nw_lith/">Instagram</a>
-            <br><a href="">CV</a></h2>
-        </div>
-      </div>
-      <div class="projets">
-        <div class="projet">
-          <figure class="miniature">
-            <a href="projets/serre-nouvelle-caledonie.html"><img src="Images/serre-nc-M-0-manon-louvard.jpg" alt="La serre de Nouvelle-Calédonie, Muséum d'histoire naturelle, Manon Louvard"></a>
-          </figure>
-        </div>
-        <div class="projet">
-          <figure class="miniature">
-            <a href="projets/la-ville.html"><img src="Images/ville-M-manon-louvard.jpg" alt="La ville, Manon Louvard"></a>
-          </figure>
-        </div>
-        <div class="projet">
-          <figure class="miniature">
-              <a href="projets/google.html"><img src="Images/google-M-3-manon-louvard.jpg" alt="Google nous veut du bien, Manon Louvard"></a>
-          </figure>
-        </div>
-        <div class="projet">
-          <figure class="miniature">
-            <a href="projets/start-from-scratch.html"><img src="Images/....jpg" alt="Start from scratch, Manon Louvard">
-            </a>
-          </figure>
-        </div>
-        <div class="projet">
-          <figure class="miniature">
-              <a href="projets/les-reves.html"><img src="Images/reve4-M2-manon-louvard.jpg" alt="Les rêves, Manon Louvard"></a>
-          </figure>
-        </div>
-        <div class="projet">
-          <figure class="miniature">
-            <a href="projets/physis.html"><img src="Images/physis-M-7-manon-louvard.png" alt="Revue Physis, Manon Louvard"></a>
-          </figure>
-        </div>
-        <div class="projet">
-          <figure class="miniature">
-            <a href="projets/le-monde.html"><img src="Images/le-monde-M-6-manon-louvard.jpg" alt="Illustration pour le journal du Monde, Manon Louvard"></a>
-          </figure>
-        </div>
-      </div>
-    </div>
-    <script src='script.js'>
-    </script>
+    <img id = "rotate" src="Images/coming-fr.svg" alt="Site web à venir !">
   </body>
-</div>
+  <script type= "text/javascript" language="javascript">
+    var object = document.getElementById("rotate");
+    pos_x = Math.round(Math.random()*((document.body.clientWidth) - (object.offsetWidth)));
+    pos_y = Math.round(Math.random()*((document.body.clientHeight) - (object.offsetHeight)));
+    document.getElementById("rotate").style.left = pos_x +"px";
+    document.getElementById("rotate").style.top = pos_y  +"px";
+  </script> 
 </html>
