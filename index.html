@@ -11,13 +11,22 @@
   </head>
 
   <body>
-    <img id = "rotate" src="Images/coming-fr.svg" alt="Site web à venir !">
+    <img class = "rotate" id = "rotate_en" src="Images/coming-en-light.svg" alt="Website is coming!">
+    <img class = "rotate" id = "rotate_fr" src="Images/coming-fr.svg" alt="Site web à venir !">
+    <img class = "rotate" id = "rotate_kr" src="Images/coming-kr-red.svg" alt="홈페이지 준비중">
   </body>
+
   <script type= "text/javascript" language="javascript">
-    var object = document.getElementById("rotate");
-    pos_x = Math.round(Math.random()*((document.body.clientWidth) - (object.offsetWidth)));
-    pos_y = Math.round(Math.random()*((document.body.clientHeight) - (object.offsetHeight)));
-    document.getElementById("rotate").style.left = pos_x +"px";
-    document.getElementById("rotate").style.top = pos_y  +"px";
+    function pos(object) {
+      var pos_x = Math.round(Math.random()*((document.body.clientWidth) - (object.offsetWidth)));
+      var pos_y = Math.round(Math.random()*((document.body.clientHeight) - (object.offsetHeight)));
+      object.style.left = pos_x +"px";
+      object.style.top = pos_y +"px";
+      console.log(object.offsetWidth)
+      console.log(object.offsetHeight)
+    }
+    pos(document.getElementById("rotate_en"));
+    pos(document.getElementById("rotate_fr"));
+    pos(document.getElementById("rotate_kr"));
   </script> 
 </html>

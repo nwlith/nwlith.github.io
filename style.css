@@ -62,13 +62,13 @@ h1 {
     }
 }
  
-#rotate {
+.rotate {
   position: relative;
   width: 200px;
   -webkit-animation: rotating 20s linear infinite;
 }
 
-#rotate:hover{
+.rotate:hover{
   animation-play-state: paused;
   }
 
