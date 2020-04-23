@@ -25,7 +25,6 @@ html
 body {
   background-color: #EEF0FC;
   color: #00301F;
-  color: #01442C;
   font-family: 'Rosarivo', serif;
   font-size:20px;
   height: 100%;
@@ -45,7 +44,7 @@ h1 {
   font-size: 30px;
 }
 
-.souligne{
+.underline{
  text-decoration: underline;
 }
 
@@ -63,7 +62,8 @@ h1 {
 }
  
 .rotate {
-  position: relative;
+  margin: 0px;
+  position: absolute;
   width: 200px;
   -webkit-animation: rotating 20s linear infinite;
 }
@@ -72,95 +72,18 @@ h1 {
   animation-play-state: paused;
   }
 
-/** 2 : Articles ***************************************************************************************************
-*/
-
-
 
 /** 3 : Responsive ***************************************************************************************************
 */
 
-/** 1000px */
-@media screen and (max-width:1000px){
-
+/** 1000px */ @media screen and (max-width:1000px){
 }
-
 /** 900px */ @media screen and (max-width:900px){
-
-
 }
 /** 600px */ @media screen and (max-width:600px){
-
-  .description {
-    display: none;
-  }
-
-  #titreprincipal {
-    display: none;
-  }
-
-  #titreprincipalLien {
-    display: block;
-    font-family: 'Acme', serif;
-    color: red;
-    font-size: 30px;
-    text-align: left;
-    text-decoration: none;
-  }
-
-  .intro {
-    margin: 0px;
-    left: 1em;
-    bottom: 1em;
-  }
-  
-  h1 {
-    margin:0px;
-  }
-
-  img {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .projet .miniature {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .projets {
-    margin: 0px;
-    margin-top: 3em;
-  }
-
-}
-
+} 
 /** 550px */ @media screen and (max-width:550px){
-  img {
-    width:90%;
-  }
 }
-
 /** 380px */
 @media screen and (max-width:380px){
-  
-  img {
-    max-width: 300px;
-  }
 }
-
-/*
-@media screen {
-  body {
-    background: blue;
-    transition: 15s;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  body {
-    background: red;
-  }
-}
-*/

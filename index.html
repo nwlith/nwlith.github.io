@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="Manon Louvard" content="Manon louvard, design graphique">
-    <title>Manon Louvard - Design graphique</title>
+    <title>Manon Louvard - Graphic Design</title>
     <link href="https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Images/favicon.png">
@@ -18,15 +18,11 @@
 
   <script type= "text/javascript" language="javascript">
     function pos(object) {
-      var pos_x = Math.round(Math.random()*((document.body.clientWidth) - (object.offsetWidth)));
-      var pos_y = Math.round(Math.random()*((document.body.clientHeight) - (object.offsetHeight)));
-      object.style.left = pos_x +"px";
-      object.style.top = pos_y +"px";
-      console.log(object.offsetWidth)
-      console.log(object.offsetHeight)
+      object.style.left = Math.round(Math.random()*((document.body.clientWidth) - object.offsetWidth)) +"px";
+      object.style.top = Math.round(Math.random()*((document.body.clientHeight) - object.offsetHeight)) +"px";
     }
-    pos(document.getElementById("rotate_en"));
-    pos(document.getElementById("rotate_fr"));
     pos(document.getElementById("rotate_kr"));
+    pos(document.getElementById("rotate_en"));
+    pos(document.getElementById("rotate_fr")); 
   </script> 
 </html>
