@@ -102,25 +102,40 @@ h1 {
 /** 3 : Responsive ***************************************************************************************************
 */
 
-/** 1000px */ @media screen and (max-width:1000px){
-}
-/** 900px */ @media screen and (max-width:980px){
+/** 980px */ @media screen and (max-width:980px){
   .intro {
     width: 600px;
     margin-left: 130px;
   }  
   nav {
-    z-index: 2;
-    position: fixed;
     margin-top:25px;
-    margin-left:30px;
+    margin-left:30px;  
     font-size: 25px;
   }
 }
-/** 600px */ @media screen and (max-width:600px){
+/** 730px */ @media screen and (max-width:730px){
+  .intro {
+    margin-right:5px;
+    width: 80%;
+  }
 } 
-/** 550px */ @media screen and (max-width:550px){
+/** 590px */ @media screen and (max-width:590px){
+  h1 {
+    margin-top: 20px;
+    font-size: 30px;
+  }
+  .intro {
+    margin-left:10px;
+    font-size: 30px;
+    width: 90%;
+  }
+  nav {
+    position:relative;
+    margin-top:10px;
+    margin-left:10px;  
+    font-size: 14px;
+  }
 }
-/** 380px */
+/** 300px */
 @media screen and (max-width:380px){
 }
