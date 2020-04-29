@@ -11,26 +11,45 @@
   </head>
 
   <body>
+    <nav>
+      <p><a onclick="document.getElementById('en').classList.add('hide');document.getElementById('fr').classList.remove('hide');">fr</a> / 
+        <a onclick="document.getElementById('fr').classList.add('hide');document.getElementById('en').classList.remove('hide');">en</a></p>
+    </nav>
     <section>
           <img class = "rotate" id = "rotate_en" src="Images/coming-en-light.svg" alt="Website is coming!">
           <img class = "rotate" id = "rotate_fr" src="Images/coming-fr.svg" alt="Site web à venir !">
           <img class = "rotate" id = "rotate_kr" src="Images/coming-kr-red.svg" alt="홈페이지 준비중">
     </section>
-    <section class="intro">
+    <section class="intro" lang="fr" id='fr'>
       <h1>Manon Louvard</h1>
       <p>Designer graphique intéressée par les médias, la typographie, la didactique et le bricolage.
         <br><br>
-        Contactez moi à l'adresse&#8239;:
+        Pour me contacter&#8239;:
         <br>
         <em class="underline">manon.louvard@pm.com</em>
-        <br>
-        +&#8239;33&#8239;7&#8239;86&#8239;10&#8239;55&#8239;13<br><br>
+        <br><br>
         À bientôt&#8239;!
       </p>
     </section>
+    <section class="intro hide" lang="en" id='en'>
+        <h1>Manon Louvard</h1>
+        <p>Graphic Designer interested in medias, typography, didactic and tinkering.
+          <br><br>
+          Contact me at&#8239;:
+          <br>
+          <em class="underline">manon.louvard@pm.com</em>
+          <br><br>
+          See you soon&#8239;!
+        </p>
+      </section>
   </body>
 
   <script type= "text/javascript" language="javascript">
+    /**function language(from, to) {
+      console.log(from, to);
+      document.getElementById(from).classList.add('hide');
+      document.getElementById(to).classList.remove('hide');
+    }*/
     function pos(object) {
       object.style.left = Math.round(Math.random()*((document.body.clientWidth) - object.offsetWidth)) +"px";
       object.style.top = Math.round(Math.random()*((document.body.clientHeight) - object.offsetHeight)) +"px";

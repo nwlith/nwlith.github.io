@@ -39,19 +39,39 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
+.underline {
+  text-decoration: underline;
+ }
+
+nav {
+  z-index: 2;
+  position: fixed;
+  margin-top:8px;
+  margin-left:40px;
+}
+
+nav p {
+  margin:0px;
+}
+
 h1 {
   font-style: italic;
   font-size: 50px;
 }
 
-.underline {
- text-decoration: underline;
-}
-
-.intro { 
+.intro {
+  display: block;
   width: 600px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.hide {
+  display: none;
 }
 
 /** 1 : rotation *****************************************************************************************************
@@ -67,10 +87,11 @@ h1 {
 }
  
 .rotate {
-  margin: 0px;
+  z-index: 1;
   position: absolute;
   width: 150px;
-  -webkit-animation: rotating 20s linear infinite;
+  margin: 0px;  
+  -webkit-animation: rotating 27s linear infinite;
 }
 
 .rotate:hover{
@@ -83,7 +104,18 @@ h1 {
 
 /** 1000px */ @media screen and (max-width:1000px){
 }
-/** 900px */ @media screen and (max-width:900px){
+/** 900px */ @media screen and (max-width:980px){
+  .intro {
+    width: 600px;
+    margin-left: 130px;
+  }  
+  nav {
+    z-index: 2;
+    position: fixed;
+    margin-top:25px;
+    margin-left:30px;
+    font-size: 25px;
+  }
 }
 /** 600px */ @media screen and (max-width:600px){
 } 
