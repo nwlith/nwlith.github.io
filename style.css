@@ -11,7 +11,7 @@
 
 /** 0 : propriétés générales**************************************************************************************
 */
-html * /** tout est séléctionné */
+html *
 {
   box-sizing: border-box; /** propriété pour choisir la manière dont on dimensionne les div */
 }
@@ -135,7 +135,13 @@ h1 {
     margin-left:10px;  
     font-size: 14px;
   }
+  .rotate {
+    width: 100px;
+  }
 }
-/** 300px */
-@media screen and (max-width:380px){
+/** 350px */
+@media screen and (max-width:350px){
+  .intro {
+    font-size: 25px;
+  }
 }

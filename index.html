@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset="utf-8">
     <meta name="Manon Louvard" content="Manon louvard, design graphique">
@@ -16,9 +15,9 @@
         <a onclick="document.getElementById('fr').classList.add('hide');document.getElementById('en').classList.remove('hide');">en</a></p>
     </nav>
     <section>
-          <img class = "rotate" id = "rotate_en" src="Images/coming-en-light.svg" alt="Website is coming!">
-          <img class = "rotate" id = "rotate_fr" src="Images/coming-fr.svg" alt="Site web à venir !">
-          <img class = "rotate" id = "rotate_kr" src="Images/coming-kr-red.svg" alt="홈페이지 준비중">
+          <img class = "rotate" id = "rotate_en" src="Images/coming-en-light.svg" alt="Website is coming!" draggable="true" data-item="0">
+          <img class = "rotate second" id = "rotate_fr" src="Images/coming-fr.svg" alt="Site web à venir !" draggable="true" data-item="1">
+          <img class = "rotate third" id = "rotate_kr" src="Images/coming-kr-red.svg" alt="홈페이지 준비중" draggable="true" data-item="2">
     </section>
     <section class="intro" lang="fr" id='fr'>
       <h1>Manon Louvard</h1>
@@ -57,5 +56,31 @@
     pos(document.getElementById("rotate_kr"));
     pos(document.getElementById("rotate_en"));
     pos(document.getElementById("rotate_fr")); 
+
+    function drag_start(event) {
+      var style = window.getComputedStyle(event.target, null);
+      event.dataTransfer.setData("text/plain", (parseInt(style.getPropertyValue("left"), 10) - event.clientX) + ',' + (parseInt(style.getPropertyValue("top"), 10) - event.clientY) + ',' + event.target.getAttribute('data-item'));
+    }
+
+    function drag_over(event) {
+      event.preventDefault();
+      return false;
+    }
+
+    function drop(event) {
+      var offset = event.dataTransfer.getData("text/plain").split(',');
+      var dm = document.getElementsByClassName('rotate');
+      dm[parseInt(offset[2])].style.left = (event.clientX + parseInt(offset[0], 10)) + 'px';
+      dm[parseInt(offset[2])].style.top = (event.clientY + parseInt(offset[1], 10)) + 'px';
+      event.preventDefault();
+      return false;
+    }
+
+    var dm = document.getElementsByClassName('rotate');
+    for (var i = 0; i < dm.length; i++) {
+      dm[i].addEventListener('dragstart', drag_start, false);
+      document.body.addEventListener('dragover', drag_over, false);
+      document.body.addEventListener('drop', drop, false);
+    }
   </script> 
 </html>
