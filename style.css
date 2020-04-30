@@ -85,7 +85,7 @@ h1 {
         -webkit-transform: rotate(360deg);
     }
 }
- 
+
 .rotate {
   z-index: 1;
   position: absolute;
@@ -96,7 +96,7 @@ h1 {
 
 .rotate:hover{
   animation-play-state: paused;
-  }
+}
 
 
 /** 3 : Responsive ***************************************************************************************************
