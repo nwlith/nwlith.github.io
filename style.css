@@ -109,8 +109,8 @@ nav {
   font-size: 1em;
 }
 
-.description a {
-  text-decoration: underline;
+.credit {
+  font-size: 0.9em;
 }
 
 blockquote {
@@ -126,6 +126,8 @@ blockquote {
   font-size: 0.8em; 
   margin-top:1em;
 }
+
+
 
 /** landing page *****************************************************************************************************
 */
@@ -218,6 +220,9 @@ blockquote {
   .slider_img {
     width: 400px;
   }
+
+  .description {
+    font-size: 0.9em;
 }
 
 /** 420px */
