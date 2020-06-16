@@ -1,147 +1,253 @@
+/** GP : 3
+    Nav : 38
+    project : 89
+    LP : 124
+    Resp : 154 */
 
-/**
-0 : propriétés générales*******************************************************************************************
-1 : intro**********************************************************************************************************
-2 : Menu***********************************************************************************************************
-3 : Articles*******************************************************************************************************
-4 : Responsive*****************************************************************************************************
-3 : Footer*********************************************************************************************************
+
+/** 0 : propriétés générales **************************************************************************************
 */
-
-
-/** 0 : propriétés générales**************************************************************************************
-*/
-html *
-{
-  box-sizing: border-box; /** propriété pour choisir la manière dont on dimensionne les div */
+html * {
+  box-sizing: border-box;
+  margin: 0px;
 }
 
-html
-{
+html {
   height: 100%;
   cursor: url('Images/cursor.svg'), default;
 }
 
 body {
-  background-color: #EEF0FC;
+  background-color: #f5f5f5;
+  background-color: #ebebeb;
+  background-color: #F2F2F2;
+  display: flex;
   color: #272D4E;
   font-family: 'Rosarivo', serif;
-  font-size:40px;
+  font-size: 17px;
   height: 100%;
-  margin: 0px;
+  margin: 20px;
   padding: 0px;
- }
+}
+
+img {
+  margin: 0px;
+}
 
 a {
   color: #272D4E;
-  font-family: 'Rosarivo', serif;
+}
+
+/** Nav *****************************************************************************************************
+*/
+
+nav {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+}
+
+.menu {
+  display: none;
+}
+
+.intro a {
   font-style: italic;
   text-decoration: none;
 }
 
-a:hover {
+.intro a:hover {
   text-decoration: underline;
 }
 
-.underline {
-  text-decoration: underline;
- }
-
-nav {
-  z-index: 2;
-  position: fixed;
-  margin-top:8px;
-  margin-left:40px;
+.index {
+  padding-left: 1em;
+  font-size: 22px;
 }
 
-nav p {
-  margin:0px;
+.index a {
+  text-decoration: none;
 }
 
-h1 {
+.index a:hover {
   font-style: italic;
-  font-size: 50px;
 }
 
-.intro {
-  display: block;
-  width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+.return {
+  padding-top: 25px;
+  padding-bottom: 5px;
+  width: 35px;
 }
 
-.hide {
-  display: none;
-}
-
-/** 1 : rotation *****************************************************************************************************
+/** project page *****************************************************************************************************
 */
 
+.slider {
+  z-index: 1;
+  width: 500px;
+  margin-top: 10px;
+  margin-left: 40%;
+}
+
+.slider_img {
+  width: 500px;
+}
+
+.slider-nav {
+  font-size: 0px;
+}
+
+.slider-btn {
+  padding: 3px;
+  margin-right: 10px;
+  width: 35px;
+}
+
+.description {
+  margin-top: 1em;
+  margin-bottom: 3em;
+  font-size: 1em;
+}
+
+.description a {
+  text-decoration: underline;
+}
+
+blockquote {
+ font-size: 0.9em;
+ margin-left:1.5em;
+}
+
+.author {
+  font-size: 0.8em;
+}
+
+.note {
+  font-size: 0.8em; 
+  margin-top:1em;
+}
+
+/** landing page *****************************************************************************************************
+*/
+
+.vignette {
+  z-index: 2;
+  position: fixed;
+  filter: drop-shadow(1px 1px 2px #3D3B41);
+  filter: drop-shadow(1px 1px 2px #242425);
+}
+
 @-webkit-keyframes rotating {
-    from{
-        -webkit-transform: rotate(0deg);
-    }
-    to{
-        -webkit-transform: rotate(360deg);
-    }
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 .rotate {
-  z-index: 1;
-  position: absolute;
   width: 150px;
-  margin: 0px;  
   -webkit-animation: rotating 27s linear infinite;
 }
 
-.rotate:hover{
+.rotate:hover {
   animation-play-state: paused;
 }
 
-
-/** 3 : Responsive ***************************************************************************************************
+/** Responsive ***************************************************************************************************
 */
 
-/** 980px */ @media screen and (max-width:980px){
-  .intro {
-    width: 600px;
-    margin-left: 130px;
-  }  
+.nav-min {
+  display: none;
+}
+
+/** 1000px */
+@media screen and (max-width:1000px) {
+  body {
+    display: block;
+  }
+
   nav {
-    margin-top:25px;
-    margin-left:30px;  
-    font-size: 25px;
+    position: relative;
+  }
+
+  .nav-full {
+    display: none;
+  }
+
+  .nav-min {
+    display: flex;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  .nav-min a {
+    text-decoration: none;
+  }
+
+  .nav-right {
+    margin-left: auto;
+  }
+
+  .slider {
+    display: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .thumbnails-list {
+    display: none;
   }
 }
-/** 730px */ @media screen and (max-width:730px){
-  .intro {
-    margin-right:5px;
-    width: 80%;
+
+/** 520px */
+@media screen and (max-width:520px) {
+  .nav-min {
+    width: 400px;
+    margin-bottom: 20px;
   }
-} 
-/** 590px */ @media screen and (max-width:590px){
-  h1 {
-    margin-top: 20px;
-    font-size: 30px;
+
+  .slider {
+    width: 400px;
   }
-  .intro {
-    margin-left:10px;
-    font-size: 30px;
-    width: 90%;
-  }
-  nav {
-    position:relative;
-    margin-top:10px;
-    margin-left:10px;  
-    font-size: 14px;
-  }
-  .rotate {
-    width: 100px;
+
+  .slider_img {
+    width: 400px;
   }
 }
-/** 350px */
-@media screen and (max-width:350px){
-  .intro {
-    font-size: 25px;
+
+/** 420px */
+@media screen and (max-width:420px) {
+  .nav-min {
+    width: 350px;
+    margin-bottom: 20px;
+  }
+
+  .slider {
+    width: 350px;
+    font-size: 1.2em;
+  }
+
+  .slider_img {
+    width: 350px;
+  }
+}
+
+/** 380px */
+@media screen and (max-width:380px) {
+  .nav-min {
+    width: 320px;
+  }
+
+  .slider {
+    width: 320px;
+  }
+
+  .slider_img {
+    width: 320px;
   }
 }
