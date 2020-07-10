@@ -127,7 +127,9 @@ blockquote {
   margin-top:1em;
 }
 
-
+.nav-min {
+  display: none;
+}
 
 /** landing page *****************************************************************************************************
 */
@@ -161,8 +163,20 @@ blockquote {
 /** Responsive ***************************************************************************************************
 */
 
-.nav-min {
-  display: none;
+@media screen and (min-width:1360px) {
+  body {
+    width: 1300px;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 30px;
+  }
+
+  .slider_img {
+    width: 650px;
+  }
+  .slider {
+    width: 650px;
+  }
 }
 
 /** 1000px */
