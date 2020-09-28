@@ -134,6 +134,12 @@ h1 {
     margin-top: 3em;
   }
 
+<<<<<<< Updated upstream
+=======
+  .description {
+    font-size: 0.9em;
+  }
+>>>>>>> Stashed changes
 }
 
 /** 550px */ @media screen and (max-width:550px){
