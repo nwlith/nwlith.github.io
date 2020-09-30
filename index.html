@@ -17,7 +17,7 @@
       <p>
         <a href="">fr</a> / <a href="en.html">en</a>
         <br><br>Manon Louvard, design graphique.
-        <br>Bricolage, didactique & médias.
+        <br>Médias, didactique & bricolage.
         <br><em>manon.louvard@pm.me</em>
       </p>
     </div>
@@ -100,14 +100,14 @@
       "px";
   }*/
   function pos(object) {
-    if (window.innerWidth < 1350) { 
+    if (window.innerWidth < 1350) {
       object.style.right = Math.round(Math.random() * (window.innerWidth - object.offsetWidth - 325)) + 20 +"px";
       object.style.top = Math.round(Math.random() * (window.innerHeight - object.offsetHeight - 50)) + 10 + "px";
-    } else { 
+    } else {
       object.style.right = Math.round(Math.random() * 850) + 20 + "px";
       object.style.top = Math.round(Math.random() * 540) + 20 + "px";
     }
-    
+
   }
   pos(document.getElementById("abs"));
   pos(document.getElementById("abs1"));
