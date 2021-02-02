@@ -1,135 +1,56 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="Manon Louvard" content="Manon louvard, design graphique">
+    <title>Manon Louvard - Graphic Design</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/favicon.png">
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="Manon Louvard" content="Manon louvard, design graphique" auteur="Manon Louvard" description="portfolio">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Manon Louvard - Design Graphique</title>
-  <link href="https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="Images/util/favicon.png">
-</head>
-
-<body>
-  <nav>
-    <div class='intro'>
-      <p>
-        <a href="">fr</a> / <a href="en.html">en</a>
-        <br><br>Manon Louvard, design graphique.
-        <br>Médias, didactique & bricolage.
-        <br><em>manon.louvard@pm.me</em>
-      </p>
-    </div>
-    <div class='index'>
-      <p>
-        <br><a href="fr/projet/variations-image-muette.html">Variations sur l'image muette</a>
-        <br><a href="fr/projet/mediarcheologie.html">Médiarchéologie</a>
-        <br><a href="fr/projet/une-autre-image-des-algorithmes.html">Une autre image des algorithmes</a>
-        <br><a href="fr/projet/les-reves.html">Les rêves</a>
-        <br><a href="fr/projet/google-nous-veut-du-bien.html">Google nous veut du bien</a>
-        <br><a href="fr/projet/les-serres-du-museum.html">Les serres du muséum</a>
-        <br><a href="fr/projet/miroir-miroir.html">Miroir Miroir</a>
-        <br><a href="fr/projet/kiffe-ta-race.html">Kiffe ta race</a>
-        <br><a href="fr/projet/la-ville.html">La ville</a>
-        <br><a href="fr/projet/revue-physis.html">Revue Physis</a>
-        <br><a href="fr/projet/revelations-snowden.html">Révelations Snowden</a>
-      </p>
-    </div>
-    <section class="thumbnails-list">
-      <img class="vignette" onclick="window.location.href='fr/projet/variations-image-muette.html'" id="abs1"
-        src="Images/vignettes/tiny/vignette_abs0.png" alt="deuxième niveau d'abstraction, Manon Louvard"
-        style="width:200px;" draggable="true" data-item="0">
-      <img class="vignette" onclick="window.location.href='fr/projet/variations-image-muette.html'" id="abs"
-        src="Images/vignettes/tiny/vignette_abs1.png" alt="premier niveau d'abstraction, Manon Louvard"
-        style="width:200px;" draggable="true" data-item="1">
-      <img class="vignette" onclick="window.location.href='fr/projet/mediarcheologie.html'" id="med"
-        src="Images/vignettes/tiny/vignette_media1.png" alt="mediarch, Manon Louvard" style="width:200px;"
-        draggable="true" data-item="2">
-      <img class="vignette" onclick="window.location.href='fr/projet/revue-physis.html'" id="phys"
-        src="Images/vignettes/tiny/vignette_phys0.png" alt="Revue Physis, Manon Louvard" style="width:90px;" draggable="true"
-        data-item="3">
-      <img class="vignette" onclick="window.location.href='fr/projet/revue-physis.html'" id="phys2"
-        src="Images/vignettes/tiny/vignette_phys1.png" alt="Revue Physis, Manon Louvard" style="width:180px;"
-        draggable="true" data-item="4">
-      <img class="vignette" onclick="window.location.href='fr/projet/revue-physis.html'" id="phys3"
-        src="Images/vignettes/tiny/vignette_phys2.png" alt="Revue Physis, Manon Louvard" style="width:180px;"
-        draggable="true" data-item="5">
-      <img class="vignette" onclick="window.location.href='fr/projet/mediarcheologie.html'" id="mediarch"
-        src="Images/vignettes/tiny/vignette_media0.png" alt="Médiarchéologie, Manon Louvard" style="width:115px;"
-        draggable="true" data-item="6">
-      <img class="vignette" onclick="window.location.href='fr/projet/la-ville.html'" id="ville"
-        src="Images/vignettes/tiny/vignette_ville.png" alt="La ville, Manon Louvard" style="width:90px;" draggable="true"
-        data-item="7">
-      <img class="vignette" onclick="window.location.href='fr/projet/revelations-snowden.html'" id="monde"
-        src="Images/vignettes/tiny/vignette_monde.png" alt="Révélations Snowden, Manon Louvard" style="width:90px;"
-        draggable="true" data-item="8">
-      <img class="vignette" onclick="window.location.href='fr/projet/google-nous-veut-du-bien.html'" id="gg"
-        src="Images/vignettes/tiny/vignette_gg.png" alt="Google nous veut du bien, Manon Louvard" style="width:90px;"
-        draggable="true" data-item="9">
-      <img class="vignette" onclick="window.location.href='fr/projet/miroir-miroir.html'" id="mm"
-        src="Images/vignettes/tiny/vignette_mm.svg" alt="Miroir miroir, Manon Louvard" style="width:46px;" draggable="true"
-        data-item="10">
-      <img class="vignette" onclick="window.location.href='fr/projet/les-reves.html'" id="reves"
-        src="Images/vignettes/tiny/vignette_reve0.png" alt="Les rêves, Manon Louvard" style="width:52px;" draggable="true"
-        data-item="11">
-      <img class="vignette" onclick="window.location.href='fr/projet/une-autre-image-des-algorithmes.html'" id="mem"
-        src="Images/vignettes/tiny/vignette_mem0.png" alt="Une autre image des algorithmes, Manon Louvard"
-        style="width:145px;" draggable="true" data-item="12">
-      <img class="vignette" onclick="window.location.href='fr/projet/les-reves.html'" id="reves2"
-        src="Images/vignettes/tiny/vignette_reve1.png" alt="Les rêves, Manon Louvard" style="width:52px;" draggable="true"
-        data-item="13">
-      <img class="vignette" onclick="window.location.href='fr/projet/les-serres-du-museum.html'" id="serres"
-        src="Images/vignettes/tiny/vignette_serre.png" alt="Les serres du museum, Manon Louvard" style="width:110px;"
-        draggable="true" data-item="14">
-      <img class="vignette" onclick="window.location.href='fr/projet/memoire.html'" id="mem2"
-        src="Images/vignettes/tiny/vignette_mem2.png" alt="Une autre image es algorithmes, Manon Louvard"
-        style="width:70px;" draggable="true" data-item="15">
-      <img class="vignette" onclick="window.location.href='fr/projet/kiffe-ta-race.html'" id="ktr"
-        src="Images/vignettes/tiny/vignette_ktr.svg" alt="Kiffe ta Race, Manon Louvard" style="width:46px;" draggable="true"
-        data-item="16">
+  <body>
+    <nav>
+      <p><a onclick="document.getElementById('en').classList.add('hide');document.getElementById('fr').classList.remove('hide');">fr</a> / 
+        <a onclick="document.getElementById('fr').classList.add('hide');document.getElementById('en').classList.remove('hide');">en</a></p>
+    </nav>
+    <section>
+          <img class = "rotate" id = "rotate_en" src="Images/coming-en-light.svg" alt="Website is coming!" draggable="true" data-item="0">
+          <img class = "rotate second" id = "rotate_fr" src="Images/coming-fr.svg" alt="Site web à venir !" draggable="true" data-item="1">
+          <img class = "rotate third" id = "rotate_kr" src="Images/coming-kr-red.svg" alt="홈페이지 준비중" draggable="true" data-item="2">
     </section>
-  </nav>
-</body>
+    <section class="intro" lang="fr" id='fr'>
+      <h1>Manon Louvard</h1>
+      <p>Designer d'interface intéressée par les médias, la typographie, la didactique et le bricolage.
+        <br><br>
+        Pour me contacter&#8239;:
+        <br>
+        <em class="underline">manon.louvard@pm.com</em>
+        <br><br>
+        À bientôt&#8239;!
+      </p>
+    </section>
+    <section class="intro hide" lang="en" id='en'>
+        <h1>Manon Louvard</h1>
+        <p>Interface Designer interested in medias, typography, didactic and tinkering.
+          <br><br>
+          Contact me at&#8239;:
+          <br>
+          <em class="underline">manon.louvard@pm.com</em>
+          <br><br>
+          See you soon&#8239;!
+        </p>
+      </section>
+  </body>
 
-<script type="text/javascript" language="javascript">
-  /**function pos(object) {
-    object.style.left = Math.round(Math.random() * (window.innerWidth - object.offsetWidth - 325)) + 330 +
-      "px";
-    object.style.top = Math.round(Math.random() * (window.innerHeight - object.offsetHeight - 50)) + 10 +
-      "px";
-  }*/
-  function pos(object) {
-    if (window.innerWidth < 1350) {
-      object.style.right = Math.round(Math.random() * (window.innerWidth - object.offsetWidth - 325)) + 20 +"px";
-      object.style.top = Math.round(Math.random() * (window.innerHeight - object.offsetHeight - 50)) + 10 + "px";
-    } else {
-      object.style.right = Math.round(Math.random() * 850) + 20 + "px";
-      object.style.top = Math.round(Math.random() * 540) + 20 + "px";
+  <script type= "text/javascript" language="javascript">
+    function pos(object) {
+      object.style.left = Math.round(Math.random()*((document.body.clientWidth) - object.offsetWidth)) +"px";
+      object.style.top = Math.round(Math.random()*((document.body.clientHeight) - object.offsetHeight)) +"px";
     }
-
-  }
-  pos(document.getElementById("abs"));
-  pos(document.getElementById("abs1"));
-  pos(document.getElementById("med"));
-  pos(document.getElementById("phys"));
-  pos(document.getElementById("phys2"));
-  pos(document.getElementById("phys3"));
-  pos(document.getElementById("monde"));
-  pos(document.getElementById("ville"));
-  pos(document.getElementById("gg"));
-  pos(document.getElementById("reves"));
-  pos(document.getElementById("reves2"));
-  pos(document.getElementById("mm"));
-  pos(document.getElementById("serres"));
-  pos(document.getElementById("mediarch"));
-  pos(document.getElementById("mem2"));
-  pos(document.getElementById("mem"));
-  pos(document.getElementById("ktr"));
-  document.querySelector(".vignette").addEventListener("click", function (event) {
-    event.preventDefault();
-  }, false);
-</script>
-<script type="text/javascript" language="javascript" src="script_dragme.js"></script>
-
+    pos(document.getElementById("rotate_kr"));
+    pos(document.getElementById("rotate_en"));
+    pos(document.getElementById("rotate_fr")); 
+  </script>
+  <script type="text/javascript" language="javascript" src="dragme.js" ></script>
 </html>
